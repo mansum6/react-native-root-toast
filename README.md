@@ -57,6 +57,8 @@ let toast = Toast.show('This is a message', {
   shadow: true,
   animation: true,
   hideOnPress: true,
+  buttonTitle:'Hello',
+
   delay: 0,
   onShow: () => {
     // calls on toast\`s appear animation start
