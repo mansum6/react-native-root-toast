@@ -1,12 +1,13 @@
 ## react-native-root-toast [![npm version](https://badge.fury.io/js/react-native-root-toast.svg)](http://badge.fury.io/js/react-native-root-toast)
 
 -----------------------
-
+#### Added Support for Button Actions
 #### Features
 1. Pure javascript solution.
 2. Support both Android and iOS.
 3. Lots of custom options for Toast.
 4. You can show/hide Toast by calling api or using Component inside render.
+
 
 ![screen-shoots](./Example/screen-shoots.gif)
 
@@ -51,25 +52,29 @@ import Toast from 'react-native-root-toast';
 
 // Add a Toast on screen.
 let toast = Toast.show('This is a message', {
-    duration: Toast.durations.LONG,
-    position: Toast.positions.BOTTOM,
-    shadow: true,
-    animation: true,
-    hideOnPress: true,
-    delay: 0,
-    onShow: () => {
-        // calls on toast\`s appear animation start
-    },
-    onShown: () => {
-        // calls on toast\`s appear animation end.
-    },
-    onHide: () => {
-        // calls on toast\`s hide animation start.
-    },
-    onHidden: () => {
-        // calls on toast\`s hide animation end.
-    }
+  duration: Toast.durations.LONG,
+  position: Toast.positions.BOTTOM,
+  shadow: true,
+  animation: true,
+  hideOnPress: true,
+  delay: 0,
+  onShow: () => {
+    // calls on toast\`s appear animation start
+  },
+  onShown: () => {
+    // calls on toast\`s appear animation end.
+  },
+  onHide: () => {
+    // calls on toast\`s hide animation start.
+  },
+  onHidden: () => {
+    // calls on toast\`s hide animation end.
+  },
+  onButtonPress: () => {
+    console.log('Button Pressed');
+  },
 });
+
 
 // You can manually hide the Toast, or it will automatically disappear after a `duration` ms timeout.
 setTimeout(function () {
