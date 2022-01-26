@@ -57,7 +57,8 @@ let toast = Toast.show('This is a message', {
   shadow: true,
   animation: true,
   hideOnPress: true,
-  buttonTitle:'Hello',
+  buttonTitle: 'Hello',
+  buttonVisible: true,
 
   delay: 0,
   onShow: () => {
@@ -73,7 +74,7 @@ let toast = Toast.show('This is a message', {
     // calls on toast\`s hide animation end.
   },
   onButtonPress: () => {
-    console.log('Button Pressed');
+    console.log('button pressed');
   },
 });
 
