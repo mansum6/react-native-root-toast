@@ -1,7 +1,7 @@
 ## react-native-root-toast [![npm version](https://badge.fury.io/js/react-native-root-toast.svg)](http://badge.fury.io/js/react-native-root-toast)
 
 -----------------------
-#### Added Support for Button Actions
+#### *** Added Support for Button Actions
 #### Features
 1. Pure javascript solution.
 2. Support both Android and iOS.
