@@ -45,15 +45,15 @@ Read more about [`react-native-root-siblings`](https://github.com/magicismight/r
 There are different ways to manage a Toast.
 ```js
 import {toastIt} from './sample/toast'
-  const testToast = () => {
+const testToast = () => {
     console.log(`Running Press Action: ${maxImages} images`);
-  };
-      toastIt({
-        message: `You can only add a maximum of ${maxImages} images`,
-        type: 'error',
-        pressAction: () => testToast(),
-        onHide: () => console.log(`Test Hide Message`),
-      });
+};
+toastIt({
+    message: `You can only add a maximum of ${maxImages} images`,
+    type: 'error',
+    pressAction: () => testToast(),
+    onHide: () => console.log(`Test Hide Message`),
+});
       ```
 
 ##### **Calling api**
