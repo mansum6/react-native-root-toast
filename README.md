@@ -42,8 +42,9 @@ Read more about [`react-native-root-siblings`](https://github.com/magicismight/r
 
 ### Usage
 
-There are two different ways to manage a Toast.
+There are different ways to manage a Toast.
 ```js
+import {toastIt} from './sample/toast'
   const testToast = () => {
     console.log(`Running Press Action: ${maxImages} images`);
   };
