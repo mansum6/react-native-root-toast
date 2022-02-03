@@ -43,6 +43,7 @@ Read more about [`react-native-root-siblings`](https://github.com/magicismight/r
 ### Usage
 
 There are two different ways to manage a Toast.
+```js
   const testToast = () => {
     console.log(`Running Press Action: ${maxImages} images`);
   };
@@ -52,6 +53,7 @@ There are two different ways to manage a Toast.
         pressAction: () => testToast(),
         onHide: () => console.log(`Test Hide Message`),
       });
+      ```
 
 ##### **Calling api**
 
